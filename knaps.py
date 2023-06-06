@@ -198,7 +198,7 @@ with modeling:
         if grafik:
             data = pd.DataFrame({
                 'Akurasi' : [knn_akurasi],
-                'Model' : ['Gaussian Naive Bayes', 'K-NN', 'Decission Tree'],
+                'Model' : ['K-NN'],
             })
 
             chart = (
