@@ -228,7 +228,8 @@ with implementation:
         Smoke = st.number_input('Smoking')
         Alco = st.number_input('Alcohol')
         Active = st.number_input('Physical Activity')
-        model = st.selectbox('K-NN')
+        model = st.selectbox('Pilihlah model yang akan anda gunakan untuk melakukan prediksi?',
+                ('Gaussian Naive Bayes', 'K-NN', 'Decision Tree'))
 
         prediksi = st.form_submit_button("Submit")
         if prediksi:
