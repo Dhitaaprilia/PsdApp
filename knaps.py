@@ -146,18 +146,18 @@ with modeling:
         submitted = st.form_submit_button("Submit")
 
         # NB
-        GaussianNB(priors=None)
+        #GaussianNB(priors=None)
 
         # Fitting Naive Bayes Classification to the Training set with linear kernel
-        gaussian = GaussianNB()
-        gaussian = gaussian.fit(training, training_label)
+        #gaussian = GaussianNB()
+        #gaussian = gaussian.fit(training, training_label)
 
         # Predicting the Test set results
-        y_pred = gaussian.predict(test)
+        #y_pred = gaussian.predict(test)
     
-        y_compare = np.vstack((test_label,y_pred)).T
-        gaussian.predict_proba(test)
-        gaussian_akurasi = round(100 * accuracy_score(test_label, y_pred))
+        #y_compare = np.vstack((test_label,y_pred)).T
+        #gaussian.predict_proba(test)
+        #gaussian_akurasi = round(100 * accuracy_score(test_label, y_pred))
         # akurasi = 10
 
         #Gaussian Naive Bayes
@@ -179,12 +179,12 @@ with modeling:
         knn_akurasi = round(100 * accuracy_score(test_label,knn_predict))
 
         #Decission Tree
-        dt = DecisionTreeClassifier()
-        dt.fit(training, training_label)
+        #dt = DecisionTreeClassifier()
+        #dt.fit(training, training_label)
         # prediction
-        dt_pred = dt.predict(test)
+        #dt_pred = dt.predict(test)
         #Accuracy
-        dt_akurasi = round(100 * accuracy_score(test_label,dt_pred))
+        #dt_akurasi = round(100 * accuracy_score(test_label,dt_pred))
 
         if submitted :
             if naive :
@@ -197,7 +197,7 @@ with modeling:
         grafik = st.form_submit_button("Grafik akurasi semua model")
         if grafik:
             data = pd.DataFrame({
-                'Akurasi' : [gaussian_akurasi, knn_akurasi, dt_akurasi],
+                'Akurasi' : [knn_akurasi],
                 'Model' : ['Gaussian Naive Bayes', 'K-NN', 'Decission Tree'],
             })
 
