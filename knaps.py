@@ -140,9 +140,9 @@ with modeling:
     training_label, test_label = train_test_split(y, test_size=0.2, random_state=1)#Nilai Y training dan Nilai Y testing
     with st.form("modeling"):
         st.write("Pilihlah model yang akan dilakukan pengecekkan akurasi:")
-        naive = st.checkbox('Gaussian Naive Bayes')
+        #naive = st.checkbox('Gaussian Naive Bayes')
         k_nn = st.checkbox('K-Nearest Neighboor')
-        destree = st.checkbox('Decission Tree')
+        #destree = st.checkbox('Decission Tree')
         submitted = st.form_submit_button("Submit")
 
         # NB
