@@ -247,8 +247,9 @@ with implementation:
                 mod = knn 
             if model == 'Decision Tree':
                 mod = dt
-
-
+                
+            input_pred = mod.predict(input_norm)
+            
             st.subheader('Hasil Prediksi')
             st.write('Menggunakan Pemodelan :', model)
 
