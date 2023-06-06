@@ -22,9 +22,9 @@ from sklearn.utils.validation import joblib
 
 st.title("Pengantar Sains Data")
 st.write("-------------------------------------------------------------------------------------------------------------------------")
-st.write("**Anggota Kelompok :**")
-st.write("Amallia Tiara Putri (200411100025)")
-st.write("Dhita Aprilia Dhamayanti (200411100102)")
+st.write("**Anggota Kelompok 12 :**")
+st.write("1. Amallia Tiara Putri (200411100025)")
+st.write("2. Dhita Aprilia Dhamayanti (200411100102)")
 st.write("-------------------------------------------------------------------------------------------------------------------------")
 upload_data, desc, preporcessing, modeling, implementation = st.tabs(["Upload Data","Dataset Description", "Preprocessing", "Modeling", "Implementation"])
 
