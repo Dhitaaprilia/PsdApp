@@ -22,7 +22,7 @@ from sklearn.utils.validation import joblib
 
 st.title("Pengantar Sains Data")
 st.write("-------------------------------------------------------------------------------------------------------------------------")
-st.write("**Anggota Kelompok 12 :**")
+st.subheader("Anggota Kelompok 12 :")
 st.write("1. Amallia Tiara Putri (200411100025)")
 st.write("2. Dhita Aprilia Dhamayanti (200411100102)")
 st.write("-------------------------------------------------------------------------------------------------------------------------")
