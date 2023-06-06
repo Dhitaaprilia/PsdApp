@@ -56,7 +56,6 @@ with desc:
     st.write("[11]. Active (Physical Activity)")
     st.subheader("""Fungsi""")
     st.write("Aplikasi ini berfungsi untuk menentukan penyakit Cardiovascular.")
-    st.write("Source Code dapat diakses melalui https://github.com/Dhitaaprilia/DataminingApp.git")
 
 with preporcessing :
     st.write("""# Preprocessing""")
