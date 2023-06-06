@@ -20,7 +20,7 @@ from sklearn.utils.validation import joblib
 
 
 
-st.title("Pengantar Sains Data")
+st.title("Proyek Sains Data")
 st.write("-------------------------------------------------------------------------------------------------------------------------")
 st.subheader("Anggota Kelompok 12 :")
 st.write("1. Amallia Tiara Putri (200411100025)")
