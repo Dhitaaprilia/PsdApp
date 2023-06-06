@@ -229,7 +229,7 @@ with implementation:
         Alco = st.number_input('Alcohol')
         Active = st.number_input('Physical Activity')
         model = st.selectbox('Pilihlah model yang akan anda gunakan untuk melakukan prediksi?',
-                ('Gaussian Naive Bayes', 'K-NN', 'Decision Tree'))
+                ('K-NN'))
 
         prediksi = st.form_submit_button("Submit")
         if prediksi:
@@ -242,12 +242,12 @@ with implementation:
             input_norm = ((inputs - df_min) / (df_max - df_min))
             input_norm = np.array(input_norm).reshape(1, -1)
 
-            if model == 'Gaussian Naive Bayes':
-                mod = gaussian
+            #if model == 'Gaussian Naive Bayes':
+                #mod = gaussian
             if model == 'K-NN':
                 mod = knn 
-            if model == 'Decision Tree':
-                mod = dt
+            #if model == 'Decision Tree':
+                #mod = dt
 
             input_pred = mod.predict(input_norm)
 
