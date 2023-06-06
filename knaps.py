@@ -228,8 +228,6 @@ with implementation:
         Smoke = st.number_input('Smoking')
         Alco = st.number_input('Alcohol')
         Active = st.number_input('Physical Activity')
-        model = st.selectbox('Pilihlah model yang akan anda gunakan untuk melakukan prediksi?',
-                ('K-NN'))
 
         prediksi = st.form_submit_button("Submit")
         if prediksi:
