@@ -242,12 +242,12 @@ with implementation:
             input_norm = ((inputs - df_min) / (df_max - df_min))
             input_norm = np.array(input_norm).reshape(1, -1)
 
-            if model == 'Gaussian Naive Bayes':
-                mod = gaussian
+            #if model == 'Gaussian Naive Bayes':
+                #mod = gaussian
             if model == 'K-NN':
                 mod = knn 
-            if model == 'Decision Tree':
-                mod = dt
+            #if model == 'Decision Tree':
+                #mod = dt
                 
             input_pred = mod.predict(input_norm)
             
